@@ -1,7 +1,6 @@
 {
     "name": "rml/logger",
     "description": "Handler for monolog",
-    "minimum-stability": "stable",
     "require": {
         "php": "^5.4 || ^7.0",
         "monolog/monolog": "^2.0@dev"
