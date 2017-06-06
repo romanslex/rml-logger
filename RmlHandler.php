@@ -10,12 +10,20 @@ class RmlHandler extends StreamHandler
     protected $baseDir;
     private $prevUrl = "";
 
+    /**
+     * RmlHandler constructor.
+     * @param string $baseDir
+     * @param int $level
+     * @param bool $bubble
+     * @param int|null $filePermission
+     * @param bool $useLocking
+     */
     public function __construct(
-        string $baseDir,
-        int $level = Logger::DEBUG,
-        bool $bubble = true,
-        ?int $filePermission = null,
-        bool $useLocking = false
+        $baseDir,
+        $level = Logger::DEBUG,
+        $bubble = true,
+        $filePermission = null,
+        $useLocking = false
     )
     {
         $this->baseDir = $baseDir;
@@ -45,7 +53,7 @@ class RmlHandler extends StreamHandler
      * @param int $level
      * @return string
      */
-    private function makeRequiredUrl(int $level): string
+    private function makeRequiredUrl($level)
     {
         $dirName = date("Y-m-d");
         $path = $this->baseDir . "/" . $dirName;
