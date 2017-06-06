@@ -3,7 +3,7 @@
     "description": "Handler for monolog",
     "require": {
         "php": "^5.4 || ^7.0",
-        "monolog/monolog": "^2.0@dev"
+        "monolog/monolog": "~1.11"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.5"
