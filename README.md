@@ -1,4 +1,8 @@
 # Handler for PHP monolog
+## Установка
+```bash
+composer require rml/logger
+```
 ## Для чего это
 Позволяет создавать древовидную структуру логов, вида
 
