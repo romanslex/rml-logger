@@ -57,7 +57,7 @@ class RmlHandler extends StreamHandler
     {
         $dirName = date("Y-m-d");
         $path = $this->baseDir . "/" . $dirName;
-        $filename = $path . "/" . Logger::getLevelName($level) . ".log";
+        $filename = $path . "/" . strtolower(Logger::getLevelName($level)) . ".log";
         return $filename;
     }
 
